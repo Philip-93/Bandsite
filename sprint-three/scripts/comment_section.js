@@ -1,7 +1,7 @@
 //unique API key
-const apiKey = "eb7a6afd-dd93-4675-99a8-e4168cb34a61";
+const apiKey = "eb7a6afd-dd93-4675-99a8-e4168cb34a65";
 // URL where all my comment information is stored:
-//project-1-api.herokuapp.com/?api_key=eb7a6afd-dd93-4675-99a8-e4168cb34a61
+//project-1-api.herokuapp.com/?api_key=eb7a6afd-dd93-4675-99a8-e4168cb34a65
 
 //Function start for my default comments
 function displayComments(arr) {
@@ -57,6 +57,17 @@ function displayComments(arr) {
     comment.classList.add("comment__text-container-default--comment");
     comment.innerText = arr[i]["comment"];
     textContainer.appendChild(comment);
+
+    //delete
+    let deleteButton = document.createElement("button");
+    deleteButton.classList.add("comment__delete-button");
+    deleteButton.addEventListener("click", event => {
+      let varId = event.target.id;
+      deleteComment(varId);
+    });
+    deleteButton.id = arr[i]["id"];
+    deleteButton.innerText = "Remove";
+    defaultContainer.appendChild(deleteButton);
   }
 }
 
@@ -70,7 +81,7 @@ form.addEventListener("submit", submitEvent => {
 
   //Post Comments
   let newAdd = axios.post(
-    "https://project-1-api.herokuapp.com/comments?api_key=eb7a6afd-dd93-4675-99a8-e4168cb34a61",
+    "https://project-1-api.herokuapp.com/comments?api_key=eb7a6afd-dd93-4675-99a8-e4168cb34a65",
     {
       name: submitEvent.target.name.value,
       comment: submitEvent.target.comment.value
@@ -79,18 +90,7 @@ form.addEventListener("submit", submitEvent => {
 
   newAdd.then(() => {
     //Get Comments
-    let commentsData = axios
-      .get(
-        "https://project-1-api.herokuapp.com/comments?api_key=eb7a6afd-dd93-4675-99a8-e4168cb34a61"
-      )
-      //Places the comments at the top
-      .then(response => {
-        displayComments(
-          response.data.sort(function(a, b) {
-            return b.timestamp - a.timestamp;
-          })
-        );
-      });
+    getComments();
   });
 
   //clears my input from the entry fields
@@ -98,15 +98,31 @@ form.addEventListener("submit", submitEvent => {
   clearInput.reset();
 });
 
+// function to get comments
+function getComments() {
+  axios
+    .get(
+      "https://project-1-api.herokuapp.com/comments?api_key=eb7a6afd-dd93-4675-99a8-e4168cb34a65"
+    )
+    .then(response => {
+      displayComments(
+        response.data.sort(function(a, b) {
+          return b.timestamp - a.timestamp;
+        })
+      );
+    });
+}
+
 //Get Comments
-let commentsData = axios.get(
-  "https://project-1-api.herokuapp.com/comments?api_key=eb7a6afd-dd93-4675-99a8-e4168cb34a61"
-);
-//Places the comments at the top
-commentsData.then(response => {
-  displayComments(
-    response.data.sort(function(a, b) {
-      return b.timestamp - a.timestamp;
-    })
-  );
-});
+getComments();
+
+//Delete Comments
+function deleteComment(id) {
+  axios
+    .delete(
+      `https://project-1-api.herokuapp.com/comments/${id}?api_key=eb7a6afd-dd93-4675-99a8-e4168cb34a65`
+    )
+    .then(response => {
+      getComments();
+    });
+}
