@@ -11,7 +11,8 @@ body {
   box-sizing: inherit;
 }
 
-// Partials imported from my partials folder
+// Partials imported from my partials folder for styling
+@import "./partials/mixins";
 @import "./partials/breakpoints";
 @import "./partials/colors";
 @import "./partials/fonts";

@@ -1,8 +1,6 @@
 /* mobile-styling-start */
 .header {
-  height: 80px;
-  width: 100vw;
-  background-color: $black;
+  @include header-banner;
   &__logo-container {
     display: flex;
     justify-content: center;
@@ -46,8 +44,8 @@
     text-align: center;
     text-decoration: none;
     color: $silver;
-    padding-bottom: 3px;
-    font-size: 1rem;
+    padding-bottom: 0.25rem;
+    font-size: 0.875rem;
     width: 50vw;
     display: block;
     &:hover {

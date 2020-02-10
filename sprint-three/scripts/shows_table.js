@@ -71,6 +71,7 @@ function table(arr) {
     oneContainer.appendChild(venue);
 
     venue.innerText = arr[i]["place"];
+
     //Location
     let locationLabel = document.createElement("h3");
     locationLabel.classList.add("shows__one-container--location-label");
@@ -82,6 +83,7 @@ function table(arr) {
     oneContainer.appendChild(location);
 
     location.innerText = arr[i]["location"];
+
     //Button
     let buttonContainer = document.createElement("div");
     buttonContainer.classList.add("shows__one-container--button-container");

@@ -58,6 +58,11 @@ function displayComments(arr) {
     comment.innerText = arr[i]["comment"];
     textContainer.appendChild(comment);
 
+    //delete button container
+    let deleteButtonContainer = document.createElement("div");
+    deleteButtonContainer.classList.add("comment__delete-button-container");
+    defaultContainer.appendChild(deleteButtonContainer);
+
     //delete
     let deleteButton = document.createElement("button");
     deleteButton.classList.add("comment__delete-button");
@@ -67,7 +72,7 @@ function displayComments(arr) {
     });
     deleteButton.id = arr[i]["id"];
     deleteButton.innerText = "Remove";
-    defaultContainer.appendChild(deleteButton);
+    deleteButtonContainer.appendChild(deleteButton);
   }
 }
 

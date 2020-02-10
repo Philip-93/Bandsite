@@ -15,9 +15,7 @@
     justify-content: center;
   }
   &__text {
-    font-family: avenir-bold;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    @include mobile-header;
     color: $white;
     margin: 0 0 0 1rem;
     width: 186px;
@@ -43,9 +41,7 @@
       justify-content: center;
     }
     &__text {
-      font-family: avenir-bold;
-      font-size: 3.75rem;
-      line-height: 4.25rem;
+      @include hero-header;
       color: $white;
       margin: 0 0 0 1.5rem;
       width: 395px;
@@ -72,9 +68,7 @@
       justify-content: center;
     }
     &__text {
-      font-family: avenir-bold;
-      font-size: 3.75rem;
-      line-height: 4.25rem;
+      @include hero-header;
       color: $white;
       margin: 0 0 0 11.25rem;
       width: 395px;
