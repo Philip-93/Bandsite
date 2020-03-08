@@ -16,4 +16,7 @@ I was tasked to create a responsive, multi-page site that connects to an API ove
 - Used Axios for API HTTP requests.
 - Corrected and included minimal design discrepancies found in the
 
-![screenshots](https://github.com/Philip-93/philip-bertogg-bandsite/blob/master/Images/Screen%20Shot%202020-03-08%20at%202.51.51%20PM.png)
+![screenshots](https://github.com/Philip-93/philip-bertogg-bandsite/blob/master/Images/Mobile-Screenshot.png)
+![screenshots](https://github.com/Philip-93/philip-bertogg-bandsite/blob/master/Images/Mobile-Screenshot1.png)
+![screenshots](https://github.com/Philip-93/philip-bertogg-bandsite/blob/master/Images/Mobile-Screenshot2.png)
+![screenshots](https://github.com/Philip-93/philip-bertogg-bandsite/blob/master/Images/Mobile-Screenshot3.png)
