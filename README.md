@@ -1,4 +1,4 @@
-<p align="center"><img src="Images/bandsiteLogo2.png" align="center"></p>
+<p align="center"><img src="Images/bandsiteLogo3.png" align="center"></p>
 
 ## About
 
