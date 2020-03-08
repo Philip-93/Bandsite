@@ -1,4 +1,5 @@
-# Band Site
+
+<h1 align="center">Band Site</h1>
 
 ## About
 
