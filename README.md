@@ -1,4 +1,4 @@
-<h1 align="center">Band Site</h1>
+<p align="center"><img src="Images/bandsiteLogo1.png" align="center"></p>
 
 ## About
 
