@@ -14,4 +14,10 @@ I was tasked to create a responsive, multi-page site that connects to an API ove
 - Wrote semantic HTML and used the principles of BEM for clear, minimal markup.
 - Became proficient in the CSS layout, Flexbox, SASS preprocessor, and the principles of responsive and mobile-first design.
 - Used Axios for API HTTP requests.
+<<<<<<< HEAD
 - Corrected and included minimal design discrepancies found in the
+=======
+- Corrected and included minimal design discrepancies found in the mock-ups provided.
+
+
+>>>>>>> 9e73dc619bfc077109cd5fb7bbec63aefbb93454
