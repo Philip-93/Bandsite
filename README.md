@@ -15,3 +15,7 @@ I was tasked to create a responsive, multi-page site that connects to an API ove
 - Became proficient in the CSS layout, Flexbox, SASS preprocessor, and the principles of responsive and mobile-first design.
 - Used Axios for API HTTP requests.
 - Corrected and included minimal design discrepancies found in the
+
+![screen](https://github.com/Philip-93/philip-bertogg-bandsite/blob/master/Images/Desktop-screenshot.png)
+
+
