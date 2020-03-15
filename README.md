@@ -23,4 +23,4 @@ I was tasked to create a responsive, multi-page site that connects to an API ove
 
 ![screen](https://github.com/Philip-93/philip-bertogg-bandsite/blob/master/Images/Desktop-screenshot.png)
 
-<h6 align="Center">*Clone github repo and open in browser to see responsiveness across mobile, tablet and desktop settings*</h6>
+<h6 align="Center">*Open project and resize browser to see responsiveness across mobile, tablet and desktop settings*</h6>
