@@ -19,7 +19,7 @@ I was tasked to create a responsive, multi-page site that connects to an API ove
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/Philip-93/philip-bertogg-brainflix.git`
+- Clone this repo to your local machine using `https://github.com/Philip-93/philip-bertogg-bandsite.git`
 
 ![screen](https://github.com/Philip-93/philip-bertogg-bandsite/blob/master/Images/Desktop-screenshot.png)
 
