@@ -3,7 +3,7 @@
 ## About
 
 [Academic Project] -
-A fictional band's website used to show comprehension of Flexbox, SASS, BEM, responsive design, APIs, and Javascript fundamentals. This project was completed in three weeks. Each sprint in this folder is the culmination of a weeks worth of work finally culminating in the final product on sprint-three.
+A fictional band's website used to show comprehension of Flexbox, SASS, BEM, responsive design, APIs, and Javascript fundamentals. This project was completed in three weeks. Each sprint in this folder is the culmination of a weeks worth of work, sprint-three folder has the final version of the project.
 
 ## Goals and Requirements
 
